@@ -5,4 +5,6 @@
     {{form.as_p}}
     <input type='submit' value='Submit' class='btn btn-primary'>
 <form>
+    {%if task%}
     <a href="{% url 'task-delete' task.id%}">Delete</a>
+    {%endif%}
